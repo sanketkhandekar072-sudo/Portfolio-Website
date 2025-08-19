@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sanket khandekar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SUVARN-RESH.CONSTRUCTIONS</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Me</h1>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile_photo/download (1).jpg" alt="Sanket khandekar" />
+                </div>
+                <div class="about-text">
+                    <p>I will graduate as a Civil Engineering student from Terna Public Charitable Trust’s College of Engineering,, Osmanabad, with a solid academic foundation from my diploma at JSPM'S BIT college of Barshi (2019-2022, First Class with Distinction).</p>
+                    
+                    <p>My passion lies in crafting innovative designs and breathtaking 3D visualizations that transform architectural ideas into reality. I bring expertise in industry-leading tools such as AutoCAD, Revit, Lumion, and SketchUp, blending technical precision with artistic creativity.</p>
+                    
+                    <p>My approach to projects is defined by meticulous attention to detail, strong problem-solving skills, and clear communication. I thrive in collaborative environments, consistently delivering exceptional results that surpass client expectations.</p>
+                </div>
+            </div>
+            
+            <h2>Education Journey</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>B.Tech in Civil Engineering</h3>
+                    <p>Terna Public Charitable Trust's College of Engineering, Osmanabad, 2022–2025</p>
+                    <p>Currently focusing on advanced structural design and 3D visualization techniques.</p>
+                </li>
+                <li>
+                    <h3>Diploma in Civil Engineering</h3>
+                    <p>BIT College of Barshi, 2019–2022</p>
+                    <p>Developed strong foundation in civil engineering principles and CAD design.</p>
+                </li>
+            </ul>
+            
+            <h2>Technical Proficiency</h2>
+            <div class="skills-grid">
+                <span>AutoCAD</span>
+                <span>Revit</span>
+                <span>Lumion</span>
+                <span>SketchUp</span>
+                <span>V-Ray</span>
+                <span>ETABS</span>
+            </div>
+            <br>
+            <h2>Personal Attributes</h2>
+            <div class="attributes-grid">
+                <div class="attribute-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Creative Problem Solver</h3>
+                    <p>Approaching challenges with innovative solutions and attention to detail.</p>
+                </div>
+                <div class="attribute-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Effective Communicator</h3>
+                    <p>Clear expression of ideas and active listening for better collaboration.</p>
+                </div>
+                <div class="attribute-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Player</h3>
+                    <p>Contributing positively to group dynamics while respecting diverse perspectives.</p>
+                </div>
+                <div class="attribute-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Time Management</h3>
+                    <p>Efficiently organizing tasks to meet deadlines without compromising quality.</p>
+                </div>
+                <div class="attribute-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Quick Learner</h3>
+                    <p>Adapts swiftly to new tools, technologies, and environments with eagerness and curiosity.</p>
+                </div>
+                <div class="attribute-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Dependable</h3>
+                    <p>Consistently reliable and accountable, ensuring tasks are completed with integrity.</p>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Let's create something amazing together</p>
+        <p>&copy; 2025 Sanket khandekar. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sanket-khandekar-59089931b"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:khandekarsanket777@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Add fade-in effect to elements when they come into view
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.timeline li, .skills-grid, .attributes-grid, .about-content');
+            
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+            
+            // Check visibility on load
+            checkVisibility();
+            
+            // Check visibility on scroll
+            window.addEventListener('scroll', checkVisibility);
+        });
+    </script>
+</body>
+</html>

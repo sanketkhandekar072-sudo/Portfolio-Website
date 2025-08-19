@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sanket khandekar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SUVARN-RESH.CONSTRUCTIONS</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <h1>My Projects</h1>
+            <p class="project-intro">Here's a selection of my work showcasing my skills in architectural design, 3D visualization, and structural engineering.</p>
+            
+            <h2>3D House Designs</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="3d.images/house1.jpg" alt="3D House Plan 1" class="modal-img">
+                    <div class="project-content">
+                        <h3>Modern Residential Villa</h3>
+                        <p>A contemporary 4-bedroom residential design with open floor plan and sustainable features.</p>
+                        <p><i class="fas fa-tools"></i> Revit, Lumion, V-Ray</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="3d.images/house2.jpg" alt="3D House Plan 2" class="modal-img">
+                    <div class="project-content">
+                        <h3>Modern Residential Villa</h3>
+                        <p>Multi-family housing solution with efficient space utilization and community areas.</p>
+                        <p><i class="fas fa-tools"></i> Revit, Lumion</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="3d.images/house3.jpg" alt="3D House Plan 3" class="modal-img">
+                    <div class="project-content">
+                        <h3>Modern Residential Villa</h3>
+                        <p>Sustainable home design with natural materials and energy-efficient systems.</p>
+                        <p><i class="fas fa-tools"></i> SketchUp, V-Ray</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>AutoCAD 2D Plans</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Residential Floor Plan</h3>
+                        <p>Detailed 2D drawings for residential home with structural details.</p>
+                        <p><i class="fas fa-tools"></i> AutoCAD</p>
+                        <a href="pdfs/11.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> View PDF</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Residential Floor Plan</h3>
+                        <p>Complete floor plan with electrical, plumbing, and structural details for a duplex.</p>
+                        <p><i class="fas fa-tools"></i> AutoCAD</p>
+                        <a href="pdfs/12.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> View PDF</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Residential Floor Plan</h3>
+                        <p>Architectural and structural drawing for a residential house.</p>
+                        <p><i class="fas fa-tools"></i> AutoCAD</p>
+                        <a href="pdfs/13.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> View PDF</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Residential Floor Plan</h3>
+                        <p>Complete floor plan with electrical, plumbing, and structural details for a duplex.</p>
+                        <p><i class="fas fa-tools"></i> AutoCAD</p>
+                        <a href="pdfs/14.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> View PDF</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Revit + Lumion Visualizations</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <video controls>
+                        <source src="3d_videos/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-content">
+                        <h3>Modern Bus Stops Design</h3>
+                        <p>Contemporary transportation hub with sustainable materials and passenger comfort in focus.</p>
+                        <p><i class="fas fa-tools"></i> Revit, Lumion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Let's create something amazing together</p>
+        <p>&copy; 2025 Sanket khandekar. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/onkarwaghmare03"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:onkarwaghmare03@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    <div class="modal" id="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Image modal viewer
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeModal = document.querySelector('.modal-close');
+        
+        document.querySelectorAll('.modal-img').forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'block';
+                modalImg.src = img.src;
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside the image
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        // Add fade-in effect to elements when they come into view
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.project-grid, .collaboration, h2');
+            
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+            
+            // Check visibility on load
+            checkVisibility();
+            
+            // Check visibility on scroll
+            window.addEventListener('scroll', checkVisibility);
+        });
+    </script>
+</body>
+</html>
